@@ -1,0 +1,29 @@
+{
+    "name": "mocha-chai",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "mocha"
+    },
+    "author": "elizabethdegroot",
+    "license": "ISC",
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "mocha": "^6.2.2",
+        "mocha-sinon": "^2.1.0",
+        "nyc": "^15.0.0"
+    },
+    "dependencies": {
+        "babel-install": "^2.1.0",
+        "mocha-sinon-chai": "^3.0.0",
+        "yarn": "^1.21.1"
+    },
+    "nyc": {
+        "all": true,
+        "check-coverage": true
+    }
+}
