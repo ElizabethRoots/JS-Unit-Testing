@@ -17,4 +17,4 @@ install:
   - npm i -g yarn
   - yarn
 script:
-  - cd jest
+  - cd jest && npm install && npm test
