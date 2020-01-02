@@ -14,4 +14,4 @@ install:
   - yarn
 script:
   - cd jest
-  - npm test --coverage
+  - nyc test --coverage
