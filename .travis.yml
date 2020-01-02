@@ -1,2 +1,9 @@
 language: node.js
-scripts: npm test
+node_js:
+  - "8"
+script:
+  - echo 'Build starts!!'
+  - echo 'Installing Deps!'
+  - yarn
+  - echo 'Testing!'
+  - npm run test:jest
