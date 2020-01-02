@@ -1,9 +1,10 @@
 language: node.js
 node_js:
-  - "8"
+  - "stable"
+cache:
+  directories:
+    - "node_modules"
+    - "jest"
 script:
-  - echo 'Build starts!!'
-  - echo 'Installing Deps!'
-  - yarn
-  - echo 'Testing!'
-  - npm run test:jest
+  - cd jest
+  - npm test
