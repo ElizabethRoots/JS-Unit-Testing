@@ -13,7 +13,8 @@ install:
   - npm i -g yarn
   - yarn 
 script:
-  - node jest/test/index.test.js
+  - npm test jest/test/index.test.js
+  - npm test jest/test/insultGenerator.test.js
   dist: trusty 
 addons: 
   chrome: stable  
