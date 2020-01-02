@@ -17,4 +17,4 @@ install:
   - npm i -g yarn
   - yarn
 script:
-  - cd jest && npm install && npm test
+  - cd jest && npm install && npm test && cd ../mocha-chai-nyc && npm install && npm test
