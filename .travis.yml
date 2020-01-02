@@ -11,10 +11,8 @@ install:
   - nvm install node
   - node -v
   - npm i -g yarn
-  - yarn 
+  - yarn
 script:
-  - npm test jest/test/index.test.js
-  - npm test jest/test/insultGenerator.test.js
-  dist: trusty 
-addons: 
-  chrome: stable  
+  - cd jest
+  - npm test test/index.test.js
+  - npm test test/insultGenerator.test.js
