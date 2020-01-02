@@ -15,3 +15,5 @@ install:
   - yarn
 script:
   - cd jest
+  - npm test
+  - npm run build
