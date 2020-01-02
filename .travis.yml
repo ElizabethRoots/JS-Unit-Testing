@@ -16,6 +16,5 @@ install:
   - node -v
   - npm i -g yarn
   - yarn
-before_script: bundle exec rake db:create db:migrate
 script:
-  - "bundle exec rspec $jest/test"
+  - cd jest
