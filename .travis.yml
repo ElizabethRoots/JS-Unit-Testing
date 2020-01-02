@@ -8,6 +8,7 @@ cache:
     - "jest"
 install:
   - bundle install
+  - npm i gem
   - nvm install node
   - node -v
   - npm i -g yarn
