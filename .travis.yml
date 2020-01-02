@@ -13,4 +13,4 @@ install:
   - npm i -g yarn
   - yarn
 script:
-  - npm test
+  - "bundle exec rspec $jest/test"
