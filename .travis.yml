@@ -18,3 +18,4 @@ install:
   - yarn
 script:
   - cd jest
+  - ./jest/test/index.test.js
