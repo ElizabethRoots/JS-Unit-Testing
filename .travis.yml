@@ -10,10 +10,7 @@ cache:
 before_install:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
-  - gem update --system
-  - gem install bundler -v 1.16.1
 install:
-  - bundle install --without production --path=${BUNDLE_PATH:-vendor/bundle}
   - npm i gem
   - nvm install node
   - node -v
