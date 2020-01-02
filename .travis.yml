@@ -1,3 +1,4 @@
+sudo: true
 language: node.js
 node_js:
   - "stable"
@@ -5,6 +6,12 @@ cache:
   directories:
     - "node_modules"
     - "jest"
+install:
+  - bundle install
+  - nvm install node
+  - node -v
+  - npm i -g yarn
+  - yarn
 script:
   - cd jest
   - npm test --coverage
