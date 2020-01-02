@@ -8,9 +8,12 @@ cache:
     - "node_modules"
 install:
   - npm i gem
-  - nvm install node
+  - nvm install nodec
   - node -v
   - npm i -g yarn
-  - yarn
+  - yarn 
 script:
-  - cd jest
+  - node jest/test/index.js
+  dist: trusty 
+addons: 
+  chrome: stable  
