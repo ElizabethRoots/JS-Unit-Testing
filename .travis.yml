@@ -13,7 +13,7 @@ install:
   - npm i -g yarn
   - yarn 
 script:
-  - node jest/test/index.js
+  - node jest/test/index.test.js
   dist: trusty 
 addons: 
   chrome: stable  
