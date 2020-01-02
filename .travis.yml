@@ -15,4 +15,3 @@ install:
   - yarn
 script:
   - cd jest
-  - cd istanbul-mocha && npm test
