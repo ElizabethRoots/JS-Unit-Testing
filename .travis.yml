@@ -7,6 +7,9 @@ cache:
   yarn: true
   directories:
     - node_modules
+env:
+  - TEST_DIR=jest
+  - TEST_DIR=mocha-chai-nyc
 before_install:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
@@ -17,4 +20,5 @@ install:
   - npm i -g yarn
   - yarn
 script:
-  - cd jest && npm install && npm test && cd ../mocha-chai-nyc && npm install && npm test
+  - cd $TEST_DIR && npm install && npm test
+    # - cd jest && npm install && npm test && cd ../mocha-chai-nyc && npm install && npm test
