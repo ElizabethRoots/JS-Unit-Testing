@@ -4,10 +4,9 @@ node_js:
   - "stable"
 cache:
   directories:
+    - ~/.npm
     - "node_modules"
-    - "jest"
 install:
-  - bundle install
   - npm i gem
   - nvm install node
   - node -v
@@ -15,4 +14,3 @@ install:
   - yarn
 script:
   - cd jest
-  - npm test --coverage
