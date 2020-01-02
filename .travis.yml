@@ -14,5 +14,5 @@ install:
   - yarn
 script:
   - cd jest
-  - npm test test/index.test.js
+  - npm test jest/test/index.test.js
   - npm test test/insultGenerator.test.js
